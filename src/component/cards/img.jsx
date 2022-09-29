@@ -17,7 +17,7 @@ const Img = () => { // подключил стор не смог подключ�
     <Grid container  spacing={2}>
 
         {data.map((el)=> 
-        <Grid item md={4} lg={3} rowSpacing={2} columnSpacing={2} > 
+        <Grid item md={4} lg={4} rowSpacing={2} columnSpacing={2} > 
 
         <Card sx={{ maxWidth: 345,
                     backgroundColor:'#FFFFFF'}}>

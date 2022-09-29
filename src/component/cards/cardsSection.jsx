@@ -7,7 +7,7 @@ const CardsBox = () => {
         <Box sx={{
       backgroundColor:'F5F5F5', 
 
-      maxWidth: 1200,
+      maxWidth: 1100,
       margin: 'auto'
     }}>
         <Typography     variant='h5' sx={{
