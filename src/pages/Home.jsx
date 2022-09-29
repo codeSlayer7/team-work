@@ -1,10 +1,10 @@
 import React from "react";
-import ResponsiveAppBar from "../components/Home/Header";
+import Header from "../components/Home/Header";
 
 const Home = () => {
   return (
     <>
-      <ResponsiveAppBar />
+      <Header />
     </>
   );
 };

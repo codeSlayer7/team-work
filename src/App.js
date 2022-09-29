@@ -1,13 +1,17 @@
+
 import './App.css';
 import MyRoutes from './Routes';
+import CardsBox from './component/cards/cardsSection';
 
 
 
 function App() {
   return (
-    <div className="App">
+    <>
       <MyRoutes/>
-    </div>
+      <CardsBox/>
+    </>
+    
   );
 }
 
