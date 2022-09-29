@@ -1,9 +1,12 @@
 import './App.css';
+import MyRoutes from './Routes';
+
+
 
 function App() {
   return (
     <div className="App">
-    <h1>HELLO BAKYT</h1>
+      <MyRoutes/>
     </div>
   );
 }
