@@ -11,9 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-
-const pages = ["Products", "Pricing", "Blog"];
+import Logo from "../../../images/logo.png";
+import styles from "./index.module.css";
+const pages = ["PROCESS", "PROJECTS", "TEAM", "CONTACT"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Header = () => {
@@ -36,10 +36,17 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      className={styles.container}
+      sx={{
+        backgroundColor: "#ffff",
+        color: "#000",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <img src={Logo}></img>
           <Typography
             variant="h6"
             noWrap
@@ -48,14 +55,15 @@ const Header = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: " 'Oswald', sans-serif",
+              fontWeight: 400,
               letterSpacing: ".3rem",
-              color: "inherit",
               textDecoration: "none",
+              margin: "20px",
+              color: "#000",
             }}
           >
-            LOGO
+            MINIMAL
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -65,7 +73,6 @@ const Header = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <MenuIcon />
             </IconButton>
@@ -74,7 +81,7 @@ const Header = () => {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "leftv",
               }}
               keepMounted
               transformOrigin={{
@@ -94,7 +101,7 @@ const Header = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          {/* <img src={Logo}></img> */}
           <Typography
             variant="h5"
             noWrap
@@ -104,21 +111,20 @@ const Header = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: "'Oswald', sans-serif",
+              fontWeight: 400,
               letterSpacing: ".3rem",
-              color: "inherit",
               textDecoration: "none",
             }}
           >
-            LOGO
+            MINIMAL
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page}
               </Button>

@@ -1,14 +1,14 @@
 
 import './App.css';
-// import MyRoutes from './Routes';
-import CardsBox from './component/cards/cardsSection';
+import MyRoutes from './Routes';
+import CardsBox from './components/cards/cardsSection';
 
 
 
 function App() {
   return (
     <>
-      {/* <MyRoutes/> */}
+      <MyRoutes/>
       <CardsBox/>
     </>
     
